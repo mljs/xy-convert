@@ -1,0 +1,45 @@
+{
+  "name": "ml-xy-convert",
+  "version": "0.0.0",
+  "description": "Convert between different xy formats",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "eslint": "eslint src",
+    "eslint-fix": "npm run eslint -- --fix",
+    "prepublishOnly": "rollup -c",
+    "test": "run-s testonly eslint",
+    "test-travis": "eslint src && jest --coverage && codecov",
+    "testonly": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mljs/xy-convert.git"
+  },
+  "keywords": [],
+  "author": "Miguel Asencio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mljs/xy-convert/issues"
+  },
+  "homepage": "https://github.com/mljs/xy-convert#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "codecov": "^3.0.0",
+    "eslint": "^4.17.0",
+    "eslint-config-cheminfo": "^1.15.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.7.0",
+    "eslint-plugin-no-only-tests": "^2.0.0",
+    "jest": "^22.2.1",
+    "npm-run-all": "^4.1.2",
+    "rollup": "^0.55.3"
+  }
+}
