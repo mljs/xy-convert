@@ -27,6 +27,7 @@ xyConvert(xxyyArray, { outputFormat: 'xyxyObject' }) === xyxyObject;
 ```
 
 ## [API Documentation](https://mljs.github.io/xy-convert/)
+Structure convention
   * xyxyArray: `[[x1, y1], [x2, y2], ... ]`
   * xxyyArray: `[[x1, x2, ...], [y1, y2, ...]]`
   * xyxyObject: `[{x: x1, y: y1}, {x: x2, y: y2}, ...]`
